@@ -18,7 +18,6 @@ from tensorflow.keras import losses, Model, optimizers, models
 from tensorflow.keras.layers.experimental import preprocessing
 from tensorflow.keras.utils import plot_model
 
-
 UPLOAD_FOLDER = '/home/alexandr-fox/PycharmProjects/flaskProject1/'
 # расширения файлов, которые разрешено загружать
 ALLOWED_EXTENSIONS = {'csv'}
@@ -26,14 +25,14 @@ app = Flask(__name__)
 # конфигурируем
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+
 def predict(path):
     reconstructed_model = models.load_model("best_model_0.06.h5")
     # plot_model(model=reconstructed_model, rankdir="LR", dpi=72, show_shapes=False)
     # cols = pandas.read_csv(path, nrows=0).columns
     # print(cols)
     # cols = cols[cols.str.contains("")].tolist()
-    data = pd.read_csv(path )
-
+    data = pd.read_csv(path)
 
     data.head()
     data_features = data.copy()
@@ -80,7 +79,8 @@ def predict(path):
     # coordinates = []
     predicted_target = reconstructed_model.predict(data_features_dict)
     for i in range(len(predicted_target)):
-        res.append([[data_features_dict['lng'][i], data_features_dict['lat'][i]], round(predicted_target[i][0], 4), data_features_dict['name'][i].replace('&#39;','')])
+        res.append([[data_features_dict['lng'][i], data_features_dict['lat'][i]], round(predicted_target[i][0], 4),
+                    data_features_dict['name'][i].replace('&#39;', '')])
         # coordinates.append()
     print(res)
     return res
@@ -112,14 +112,17 @@ def maps():
             filename = secure_filename(file.filename)
             # сохраняем файл
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            res = predict(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            try:
+                res = predict(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            except:
+                return render_template('index.html', error="Неверный формат датасета")
             os.remove(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             # если все прошло успешно, то перенаправляем
             # на функцию-представление `download_file`
             # для скачивания файла
-            return render_template('maps.html', coords=res, name = "esfgd", names={"asd":"dfdg","wasd":"sdfgdh"})
-    return redirect("/")
-
+            return render_template('maps.html', coords=res)
+    res = predict(os.path.join(app.config['UPLOAD_FOLDER'], "covid_data_test_1.csv"))
+    return render_template('maps.html', coords=res)
 
 
 @app.route('/', methods=['GET'])

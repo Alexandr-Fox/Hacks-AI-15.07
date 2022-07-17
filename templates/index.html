@@ -21,6 +21,7 @@
 {#    <body style="margin: 0" data-qml="{{ url_for('static', filename='qml/main.qml') }}">#}
     <body>
     <div class="login_content">
+        <span>{{ error }}</span>
         <form method=post action="maps" enctype=multipart/form-data >
             <div class="upload_form">
                 <input type="file" name="file"  accept="text/csv"  class="file_form file_label" required id="file_label">
@@ -29,7 +30,9 @@
                     <span class="title_file_label" id="file-label">Выберите файл csv</span>
                 </label>
             </div>
-          <input type=submit class="adm_button" value=Upload>
+            <input type=submit class="adm_button" value=Upload>
+            <br>
+            <a class="adm_button" style="width: 200px" href="/maps">Загрузить тестовые данных</a>
         </form>
     </div>
 
