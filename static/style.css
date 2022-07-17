@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic');
+* {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background: #9c9c9c;
+}
+
+.upload_form {
+    position: relative;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+input[type=file] {
+    outline:0;
+    opacity:0;
+    pointer-events:none;
+    user-select:none
+}
+.file_label {
+    width:120px;
+    border:2px dashed grey;
+    border-radius:5px;
+    display:block;
+    padding:1.2em;
+    transition:border 300ms ease;
+    cursor:pointer;
+    text-align:center
+}
+.file_label i {
+    display:block;
+    font-size:42px;
+    padding-bottom:16px
+}
+.file_label i,.file_label .title_file_label {
+    color:grey;
+    transition:200ms color
+}
+.file_label:hover {
+    border:2px solid #000
+}
+.file_label > input[type="file"] {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    border:0
+}
+.file_label:hover i,.file_label:hover .title_file_label {
+    color:#000
+}
+.text_form {
+    border: 1px solid white;
+    border-radius: 15em;
+    color: #202020;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 10px 3px #37faa2;
+    outline: none;
+    height: 0.2em;
+    width: 260px;
+    font-size: 1.25em;
+    padding: 1em;
+    margin-right: 5px;
+}
+.text_form:disabled {
+    border-color: lightgray;
+    background: lightgray;
+    cursor: no-drop;
+}
+input.button {
+    color: #37faa2;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    padding: .5em 2em;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    background: #242526;
+    transition: 0.2s;
+    text-decoration: none;
+    user-select: none;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+input.button:hover {
+    background: #37faa2;
+    color: #242526;
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}
+input.button:active {
+    background: #37faa2;
+    color: #242526;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.adm_padding {
+    padding: 1em;
+    color: white;
+}
+.adm_text_form {
+    border: 1px solid white;
+    border-radius: 15em;
+    color: #202020;
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 10px 3px #37faa2;
+    outline: none;
+    width: 260px;
+    font-size: 1.2em;
+    padding: 0.4em;
+}
+.adm_button {
+    color: #37faa2;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    padding: .5em 2em;
+
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    background: #242526;
+    transition: 0.2s;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+.adm_button:hover {
+    background: #37faa2;
+    color: #242526;
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}
+.adm_button:active {
+    background: #37faa2;
+    color: #242526;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.back_button {
+    color: #37faa2;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    padding: .5em 2em;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    background: #242526;
+    transition: 0.2s;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+.back_button:hover {
+    background: #37faa2;
+    color: #242526;
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}
+.back_button:active {
+    background: #37faa2;
+    color: #242526;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+#container {
+    margin: 0;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    }

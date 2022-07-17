@@ -1,0 +1,460 @@
+Model: "model_1"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ avg_temp_max (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ avg_temp_median (InputLayer)   [(None, 1)]          0           []                               
+                                                                                                  
+ avg_temp_min (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ avg_temp_std (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ bus_april_travel_18 (InputLaye  [(None, 1)]         0           []                               
+ r)                                                                                               
+                                                                                                  
+ bus_march_travel_18 (InputLaye  [(None, 1)]         0           []                               
+ r)                                                                                               
+                                                                                                  
+ children_places (InputLayer)   [(None, 1)]          0           []                               
+                                                                                                  
+ cleanness (InputLayer)         [(None, 1)]          0           []                               
+                                                                                                  
+ density (InputLayer)           [(None, 1)]          0           []                               
+                                                                                                  
+ district (InputLayer)          [(None, 1)]          0           []                               
+                                                                                                  
+ ecology (InputLayer)           [(None, 1)]          0           []                               
+                                                                                                  
+ ekmo_number (InputLayer)       [(None, 1)]          0           []                               
+                                                                                                  
+ ekmo_per_100k (InputLayer)     [(None, 1)]          0           []                               
+                                                                                                  
+ epirank_avia (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ epirank_avia_cat (InputLayer)  [(None, 1)]          0           []                               
+                                                                                                  
+ epirank_bus (InputLayer)       [(None, 1)]          0           []                               
+                                                                                                  
+ epirank_bus_cat (InputLayer)   [(None, 1)]          0           []                               
+                                                                                                  
+ epirank_train (InputLayer)     [(None, 1)]          0           []                               
+                                                                                                  
+ epirank_train_cat (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ has_metro (InputLayer)         [(None, 1)]          0           []                               
+                                                                                                  
+ humidity_max (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ humidity_median (InputLayer)   [(None, 1)]          0           []                               
+                                                                                                  
+ humidity_min (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ humidity_std (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ ivl_number (InputLayer)        [(None, 1)]          0           []                               
+                                                                                                  
+ ivl_per_100k (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ lat (InputLayer)               [(None, 1)]          0           []                               
+                                                                                                  
+ life_costs (InputLayer)        [(None, 1)]          0           []                               
+                                                                                                  
+ life_quality_place_rating (Inp  [(None, 1)]         0           []                               
+ utLayer)                                                                                         
+                                                                                                  
+ lng (InputLayer)               [(None, 1)]          0           []                               
+                                                                                                  
+ name (InputLayer)              [(None, 1)]          0           []                               
+                                                                                                  
+ neighbourhood (InputLayer)     [(None, 1)]          0           []                               
+                                                                                                  
+ num_patients_tubercul_1992 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_1993 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_1994 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_1995 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_1996 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_1997 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_1998 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_1999 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2000 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2001 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2002 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2003 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2004 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2005 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2006 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2007 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2008 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2009 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2010 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2011 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2012 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2013 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2014 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2015 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2016 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_patients_tubercul_2017 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ num_phones_rural_2018 (InputLa  [(None, 1)]         0           []                               
+ yer)                                                                                             
+                                                                                                  
+ num_phones_urban_2019 (InputLa  [(None, 1)]         0           []                               
+ yer)                                                                                             
+                                                                                                  
+ population (InputLayer)        [(None, 1)]          0           []                               
+                                                                                                  
+ pressure_max (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ pressure_median (InputLayer)   [(None, 1)]          0           []                               
+                                                                                                  
+ pressure_min (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ pressure_std (InputLayer)      [(None, 1)]          0           []                               
+                                                                                                  
+ public_services (InputLayer)   [(None, 1)]          0           []                               
+                                                                                                  
+ public_transport (InputLayer)  [(None, 1)]          0           []                               
+                                                                                                  
+ region_x (InputLayer)          [(None, 1)]          0           []                               
+                                                                                                  
+ rural (InputLayer)             [(None, 1)]          0           []                               
+                                                                                                  
+ rural_50_54_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ rural_55_59_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ rural_60_64_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ rural_65_69_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ rural_70_74_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ rural_75_79_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ rural_80_84_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ rural_85_89_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ rural_90_94_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ security (InputLayer)          [(None, 1)]          0           []                               
+                                                                                                  
+ shops_and_malls (InputLayer)   [(None, 1)]          0           []                               
+                                                                                                  
+ sport_and_outdoor (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ subject (InputLayer)           [(None, 1)]          0           []                               
+                                                                                                  
+ urban (InputLayer)             [(None, 1)]          0           []                               
+                                                                                                  
+ urban_50_54_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ urban_55_59_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ urban_60_64_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ urban_65_69_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ urban_70_74_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ urban_75_79_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ urban_80_84_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ urban_85_89_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ urban_90_94_years (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ volume_serv_accommodation_2017  [(None, 1)]         0           []                               
+  (InputLayer)                                                                                    
+                                                                                                  
+ volume_serv_chargeable_2017 (I  [(None, 1)]         0           []                               
+ nputLayer)                                                                                       
+                                                                                                  
+ volume_serv_culture_2017 (Inpu  [(None, 1)]         0           []                               
+ tLayer)                                                                                          
+                                                                                                  
+ volume_serv_disabled_2017 (Inp  [(None, 1)]         0           []                               
+ utLayer)                                                                                         
+                                                                                                  
+ volume_serv_education_2017 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ volume_serv_hotels_2017 (Input  [(None, 1)]         0           []                               
+ Layer)                                                                                           
+                                                                                                  
+ volume_serv_household_2017 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ volume_serv_housing_2017 (Inpu  [(None, 1)]         0           []                               
+ tLayer)                                                                                          
+                                                                                                  
+ volume_serv_medicine_2017 (Inp  [(None, 1)]         0           []                               
+ utLayer)                                                                                         
+                                                                                                  
+ volume_serv_others_2017 (Input  [(None, 1)]         0           []                               
+ Layer)                                                                                           
+                                                                                                  
+ volume_serv_post_2017 (InputLa  [(None, 1)]         0           []                               
+ yer)                                                                                             
+                                                                                                  
+ volume_serv_sanatorium_2017 (I  [(None, 1)]         0           []                               
+ nputLayer)                                                                                       
+                                                                                                  
+ volume_serv_sport_2017 (InputL  [(None, 1)]         0           []                               
+ ayer)                                                                                            
+                                                                                                  
+ volume_serv_telecom_2017 (Inpu  [(None, 1)]         0           []                               
+ tLayer)                                                                                          
+                                                                                                  
+ volume_serv_tourism_2017 (Inpu  [(None, 1)]         0           []                               
+ tLayer)                                                                                          
+                                                                                                  
+ volume_serv_transport_2017 (In  [(None, 1)]         0           []                               
+ putLayer)                                                                                        
+                                                                                                  
+ volume_serv_veterinary_2017 (I  [(None, 1)]         0           []                               
+ nputLayer)                                                                                       
+                                                                                                  
+ whole_population (InputLayer)  [(None, 1)]          0           []                               
+                                                                                                  
+ wind_speed_ms_max (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ wind_speed_ms_median (InputLay  [(None, 1)]         0           []                               
+ er)                                                                                              
+                                                                                                  
+ wind_speed_ms_min (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ wind_speed_ms_std (InputLayer)  [(None, 1)]         0           []                               
+                                                                                                  
+ work_ratio_15_24_years (InputL  [(None, 1)]         0           []                               
+ ayer)                                                                                            
+                                                                                                  
+ work_ratio_15_64_years (InputL  [(None, 1)]         0           []                               
+ ayer)                                                                                            
+                                                                                                  
+ work_ratio_15_72_years (InputL  [(None, 1)]         0           []                               
+ ayer)                                                                                            
+                                                                                                  
+ work_ratio_25_54_years (InputL  [(None, 1)]         0           []                               
+ ayer)                                                                                            
+                                                                                                  
+ work_ratio_55_64_years (InputL  [(None, 1)]         0           []                               
+ ayer)                                                                                            
+                                                                                                  
+ model (Functional)             (None, 657)          231         ['avg_temp_max[0][0]',           
+                                                                  'avg_temp_median[0][0]',        
+                                                                  'avg_temp_min[0][0]',           
+                                                                  'avg_temp_std[0][0]',           
+                                                                  'bus_april_travel_18[0][0]',    
+                                                                  'bus_march_travel_18[0][0]',    
+                                                                  'children_places[0][0]',        
+                                                                  'cleanness[0][0]',              
+                                                                  'density[0][0]',                
+                                                                  'district[0][0]',               
+                                                                  'ecology[0][0]',                
+                                                                  'ekmo_number[0][0]',            
+                                                                  'ekmo_per_100k[0][0]',          
+                                                                  'epirank_avia[0][0]',           
+                                                                  'epirank_avia_cat[0][0]',       
+                                                                  'epirank_bus[0][0]',            
+                                                                  'epirank_bus_cat[0][0]',        
+                                                                  'epirank_train[0][0]',          
+                                                                  'epirank_train_cat[0][0]',      
+                                                                  'has_metro[0][0]',              
+                                                                  'humidity_max[0][0]',           
+                                                                  'humidity_median[0][0]',        
+                                                                  'humidity_min[0][0]',           
+                                                                  'humidity_std[0][0]',           
+                                                                  'ivl_number[0][0]',             
+                                                                  'ivl_per_100k[0][0]',           
+                                                                  'lat[0][0]',                    
+                                                                  'life_costs[0][0]',             
+                                                                  'life_quality_place_rating[0][0]
+                                                                 ',                               
+                                                                  'lng[0][0]',                    
+                                                                  'name[0][0]',                   
+                                                                  'neighbourhood[0][0]',          
+                                                                  'num_patients_tubercul_1992[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_1993[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_1994[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_1995[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_1996[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_1997[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_1998[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_1999[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2000[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2001[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2002[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2003[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2004[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2005[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2006[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2007[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2008[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2009[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2010[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2011[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2012[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2013[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2014[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2015[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2016[0][0
+                                                                 ]',                              
+                                                                  'num_patients_tubercul_2017[0][0
+                                                                 ]',                              
+                                                                  'num_phones_rural_2018[0][0]',  
+                                                                  'num_phones_urban_2019[0][0]',  
+                                                                  'population[0][0]',             
+                                                                  'pressure_max[0][0]',           
+                                                                  'pressure_median[0][0]',        
+                                                                  'pressure_min[0][0]',           
+                                                                  'pressure_std[0][0]',           
+                                                                  'public_services[0][0]',        
+                                                                  'public_transport[0][0]',       
+                                                                  'region_x[0][0]',               
+                                                                  'rural[0][0]',                  
+                                                                  'rural_50_54_years[0][0]',      
+                                                                  'rural_55_59_years[0][0]',      
+                                                                  'rural_60_64_years[0][0]',      
+                                                                  'rural_65_69_years[0][0]',      
+                                                                  'rural_70_74_years[0][0]',      
+                                                                  'rural_75_79_years[0][0]',      
+                                                                  'rural_80_84_years[0][0]',      
+                                                                  'rural_85_89_years[0][0]',      
+                                                                  'rural_90_94_years[0][0]',      
+                                                                  'security[0][0]',               
+                                                                  'shops_and_malls[0][0]',        
+                                                                  'sport_and_outdoor[0][0]',      
+                                                                  'subject[0][0]',                
+                                                                  'urban[0][0]',                  
+                                                                  'urban_50_54_years[0][0]',      
+                                                                  'urban_55_59_years[0][0]',      
+                                                                  'urban_60_64_years[0][0]',      
+                                                                  'urban_65_69_years[0][0]',      
+                                                                  'urban_70_74_years[0][0]',      
+                                                                  'urban_75_79_years[0][0]',      
+                                                                  'urban_80_84_years[0][0]',      
+                                                                  'urban_85_89_years[0][0]',      
+                                                                  'urban_90_94_years[0][0]',      
+                                                                  'volume_serv_accommodation_2017[
+                                                                 0][0]',                          
+                                                                  'volume_serv_chargeable_2017[0][
+                                                                 0]',                             
+                                                                  'volume_serv_culture_2017[0][0]'
+                                                                 , 'volume_serv_disabled_2017[0][0
+                                                                 ]',                              
+                                                                  'volume_serv_education_2017[0][0
+                                                                 ]',                              
+                                                                  'volume_serv_hotels_2017[0][0]',
+                                                                  'volume_serv_household_2017[0][0
+                                                                 ]',                              
+                                                                  'volume_serv_housing_2017[0][0]'
+                                                                 , 'volume_serv_medicine_2017[0][0
+                                                                 ]',                              
+                                                                  'volume_serv_others_2017[0][0]',
+                                                                  'volume_serv_post_2017[0][0]',  
+                                                                  'volume_serv_sanatorium_2017[0][
+                                                                 0]',                             
+                                                                  'volume_serv_sport_2017[0][0]', 
+                                                                  'volume_serv_telecom_2017[0][0]'
+                                                                 , 'volume_serv_tourism_2017[0][0]
+                                                                 ',                               
+                                                                  'volume_serv_transport_2017[0][0
+                                                                 ]',                              
+                                                                  'volume_serv_veterinary_2017[0][
+                                                                 0]',                             
+                                                                  'whole_population[0][0]',       
+                                                                  'wind_speed_ms_max[0][0]',      
+                                                                  'wind_speed_ms_median[0][0]',   
+                                                                  'wind_speed_ms_min[0][0]',      
+                                                                  'wind_speed_ms_std[0][0]',      
+                                                                  'work_ratio_15_24_years[0][0]', 
+                                                                  'work_ratio_15_64_years[0][0]', 
+                                                                  'work_ratio_15_72_years[0][0]', 
+                                                                  'work_ratio_25_54_years[0][0]', 
+                                                                  'work_ratio_55_64_years[0][0]'] 
+                                                                                                  
+ sequential (Sequential)        (None, 1)            95105       ['model[0][0]']                  
+                                                                                                  
+==================================================================================================
+Total params: 95,336
+Trainable params: 95,105
+Non-trainable params: 231
+__________________________________________________________________________________________________

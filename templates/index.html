@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Данные о заражениях</title>
+        <!-- ES5 compat shim. See https://github.com/webcomponents/custom-elements for details.
+             Don't use this link in production, install a specific release. -->
+        <script src="https://rawgit.com/webcomponents/custom-elements/master/src/native-shim.js"></script>
+        <!-- Custom elements polyfill. See https://github.com/webcomponents/custom-elements for details.
+             Don't use this link in production, install a specific release. -->
+        <script src="https://rawgit.com/webcomponents/custom-elements/master/custom-elements.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <script type="text/javascript" src="{{ url_for('static', filename='lib/qmlweb.js') }}"></script>
+{#        <style src="{{ url_for('static', filename='style.css') }}"></style>#}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <script>
+          QmlWeb.registerElement('qml-button', "{{ url_for('static', filename='qml/main.qml') }}");
+        </script>
+    </head>
+{#    <body style="margin: 0" data-qml="{{ url_for('static', filename='qml/main.qml') }}">#}
+    <body>
+    <div class="login_content">
+        <form method=post action="maps" enctype=multipart/form-data >
+            <div class="upload_form">
+                <input type="file" name="file"  accept="text/csv"  class="file_form file_label" required id="file_label">
+                <label class="file_label" for="file_label">
+                    <i class="material-icons">attach_file</i>
+                    <span class="title_file_label" id="file-label">Выберите файл csv</span>
+                </label>
+            </div>
+          <input type=submit class="adm_button" value=Upload>
+        </form>
+    </div>
+
+    <script>
+        let inputs = document.querySelectorAll('.file_label');
+        Array.prototype.forEach.call(inputs, function (input) {
+            let label = input.nextElementSibling;
+            input.addEventListener('change', function (e) {
+                if (this.files)
+                {
+                    label.querySelector('.title_file_label').innerText = "Выбрано файлов: "+this.files.length;
+                }
+                else
+                    label.querySelector('.title_file_label').innerText = "Выбирите файлы";
+            });
+        });
+    </script>
+
+    </body>
+</html>
